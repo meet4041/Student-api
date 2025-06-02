@@ -86,3 +86,4 @@ htmlcov/
 // Additional ignore by user
 .env
 storage
+/config
