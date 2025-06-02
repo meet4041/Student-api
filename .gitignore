@@ -82,4 +82,7 @@ htmlcov/
 .tmp
 *.tmp
 *.bak 
+
+// Additional ignore by user
 .env
+storage
