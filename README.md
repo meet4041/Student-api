@@ -1,17 +1,18 @@
 # Student API
 
-This repository contains a **Postman collection** for performing CRUD operations on a Student API. This project was created as part of learning API testing via Postman.
+This repository contains a **Postman collection** for performing CRUD operations on a Student API. The project was created as part of learning API development and API testing using **Postman**. The backend is built using **Go (Golang)**.
+
+---
 
 ## 📝 Description
 
-The **Student API Postman Collection** demonstrates the following HTTP operations:
+The **Student API Postman Collection** demonstrates the following HTTP operations on the Student resource:
 
 - **Create** (POST)
 - **Read** (GET)
-- **Update** (PATCH/PUT)
-- **Delete** (DELETE)
+- **Get users** (GET)
 
-These API requests are designed to practice and showcase working with REST APIs using **Postman**, one of the most popular API testing tools.
+These API requests help to practice and showcase how to work with REST APIs using **Postman**, which is widely used for API testing and development.
 
 ---
 
@@ -26,14 +27,42 @@ This project is inspired by the tutorial from **Coder's Gyan** on YouTube.
 
 ## ⚙️ Requirements
 
-- **Postman** (Download: https://www.postman.com/downloads/)
+- **Go (Golang)** installed on your system.
+- **Postman** (Download: [https://www.postman.com/downloads/](https://www.postman.com/downloads/))
 
 ---
 
-## 🚀 How to Use
+## 🚀 How to Run & Use
 
-1. **Clone this repository:**
+### 1. Clone this repository:
 
 ```bash
 git clone https://github.com/meet4041/Student-api.git
 cd Student-api
+
+### 2. Start the Go server:
+
+```bash
+go run cmd/students-api/main.go -config config/local.yaml
+The server will start at:
+http://localhost:8082
+
+### 3. Open Postman and test using the following endpoints:
+
+➤ Create User:
+Method: POST
+URL: http://localhost:8082/api/students
+Body (JSON):
+{
+    "name": "John Doe",
+    "age": 21,
+    "grade": "A"
+}
+
+➤ Get User by ID:
+Method: GET
+URL: http://localhost:8082/api/students/1
+
+➤ Get All Users:
+Method: GET
+URL: http://localhost:8082/api/students
