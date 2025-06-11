@@ -9,8 +9,8 @@ This repository contains a **Postman collection** for performing CRUD operations
 The **Student API Postman Collection** demonstrates the following HTTP operations on the Student resource:
 
 - **Create** (POST)
-- **Read** (GET)
-- **Get users** (GET)
+- **Read (Single User)** (GET)
+- **Read (All Users)** (GET)
 
 These API requests help to practice and showcase how to work with REST APIs using **Postman**, which is widely used for API testing and development.
 
@@ -28,7 +28,8 @@ This project is inspired by the tutorial from **Coder's Gyan** on YouTube.
 ## ⚙️ Requirements
 
 - **Go (Golang)** installed on your system.
-- **Postman** (Download: [https://www.postman.com/downloads/](https://www.postman.com/downloads/))
+- **Postman** — for API testing ([Download here](https://www.postman.com/downloads/)).
+- **TablePlus** — to view and verify database tables ([Download here](https://tableplus.com/)).
 
 ---
 
@@ -40,6 +41,7 @@ This project is inspired by the tutorial from **Coder's Gyan** on YouTube.
 git clone https://github.com/meet4041/Student-api.git
 cd Student-api
 
+➤ To start the server:
 go run cmd/students-api/main.go -config config/local.yaml
 The server will start at:
 http://localhost:8082
