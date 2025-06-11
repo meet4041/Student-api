@@ -40,14 +40,9 @@ This project is inspired by the tutorial from **Coder's Gyan** on YouTube.
 git clone https://github.com/meet4041/Student-api.git
 cd Student-api
 
-### 2. Start the Go server:
-
-```bash
 go run cmd/students-api/main.go -config config/local.yaml
 The server will start at:
 http://localhost:8082
-
-### 3. Open Postman and test using the following endpoints:
 
 ➤ Create User:
 Method: POST
