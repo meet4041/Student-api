@@ -35,7 +35,7 @@ This project is inspired by the tutorial from **Coder's Gyan** on YouTube.
 
 ## 🚀 How to Run & Use
 
-### 1. Clone this repository:
+### 1. Steps to Follow:
 
 ```bash
 git clone https://github.com/meet4041/Student-api.git
